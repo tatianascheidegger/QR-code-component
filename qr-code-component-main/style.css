@@ -1,0 +1,90 @@
+* {
+    background: white; /* Alterado para fundo branco */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:  hsl(212, 45%, 89%);
+}
+
+.qr-container {
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+}
+
+.qr-wrapper {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto 10px;
+    display: inline-block; /*elemento lado a lado*/
+}
+
+.qr-wrapper img {
+    max-width: 100%;
+    border-radius: 8px;
+    width: 800px; /* Ajustando o valor para aumentar o tamanho da imagem */
+}
+
+.qr-text {
+    background-color: white;
+    padding: 10px;
+}
+
+.qr-text h2.title {
+    font-size: 15px;
+    color: hsl(218, 44%, 22%); /* Cor do h2 */
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.qr-text p.description {
+    font-size: 15px;
+    color: hsl(212, 45%, 89%); /* Cor do parágrafo */
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+
+@media (max-width: 1440px) {
+    .qr-container {
+        max-width: 800px; /* Defina a largura máxima para 800px ou outro valor adequado */
+    }
+
+    .qr-wrapper img {
+        width: 300px; /* Ajuste o tamanho da imagem para a tela de desktop */
+    }
+}
+
+@media (max-width: 375px) {
+    .qr-container {
+        max-width: 300px; /* Defina a largura máxima para 300px ou outro valor adequado */
+        padding: 10px; /* Reduza o espaçamento interno para dispositivos móveis */
+    }
+
+    .qr-wrapper img {
+        width: 150px; /* Ajuste o tamanho da imagem para a tela de mobile */
+    }
+
+    .qr-text h2.title {
+        font-size: 12px; /* Reduza o tamanho da fonte do título para dispositivos móveis */
+        margin-top: 8px; /* Reduza a margem superior para dispositivos móveis */
+    }
+
+    .qr-text p.description {
+        font-size: 12px; /* Reduza o tamanho da fonte do parágrafo para dispositivos móveis */
+        margin-top: 6px; /* Reduza a margem superior para dispositivos móveis */
+    }
+}
